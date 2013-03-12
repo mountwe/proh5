@@ -5,11 +5,20 @@
 	<title>Sample HTML5 File</title>
 	<script type="text/javascript" charset = "utf-8">
 		function pageLoaded() {
-			alert('Hello World!');
+			// Get a handle to the canvas object
+			var canvas = document.getElementById('testcanvas');
+			
+			// Get the 2d context for this canvas
+			var context = canvas.getContext('2d');
+			
+			// Drawing code here
 		}
 	</script>
 </head>
 <body onload = "pageLoaded()";">
+<canvas width="640" height="480" id="testcanvas" style="border:black 1px solid;">
+	Your browser does not support HTML5 canvas. Please shift to another browser.
+</canvas>
 
 </body>
 </html>
