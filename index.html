@@ -60,7 +60,37 @@
 			context.lineTo(190,140);
 			context.closePath();
 			context.stroke();
-
+		  
+			// Drawing text
+			context.fillText('This is some text...',330,40);
+			
+			// Modifying the font
+			context.font = '10 pt Arial';
+			context.fillText('This is in 10 pt Arial...',330,60);
+			
+			// Drawing stroked text
+			context.font = '16 pt Arial';
+			context.strokeText('This is stroked in 16 pt Arial...',330,80);
+			
+			// Set fill color to red
+			context.fillStyle = "red";
+			// Draw a red filled rectangle
+			context.fillRect (310,160,100,50);
+			
+			// Set stroke color to green
+			context.strokeStyle = "green";
+			// Draw a green stroked rectangle
+			context.strokeRect (310,240,100,50);
+			
+			// Set fill color to red using rgb()
+			context.fillStyel = "rgb(255,0,0)";
+			// Draw a red filled rectangle
+			context.fillRect (420,160,100,50);
+			
+			// Set fill color to green with an alpha of 0.5
+			context.fillStyle = "rgba(0,255,0,0.6)";
+			// Draw a sem transparent green filled rectangle
+			context.fillRect (450,180,100,50);
 
 		}
 	</script>
