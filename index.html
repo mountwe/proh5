@@ -34,6 +34,34 @@
 			//Clear a rectangle of width 30 and height 20 pixels
 			// at (260,20)
 			context.clearRect(260,20,30,20);
+
+			// DRAWING COMPLEX SHAPES
+			// Filled triangle
+			context.beginPath();
+			context.moveTo(10,120);   // Start drawing at 10,120
+			context.lineTo(10,180);
+			context.lineTo(110,150);
+			context.fill();    // Close the shape and fill it out
+
+			// Stroked triangle
+			context.beginPath();
+			context.moveTo(140,160);    // Start drawing at 140,160
+			context.lineTo(140,220);
+			context.lineTo(40,190);
+			context.closePath();
+			context.stroke();
+
+      // A more complex set of lines...
+			context.beginPath();
+			context.moveTo(160,160);    // Start drawing at 160,160
+			context.lineTo(170,220);
+			context.lineTo(240,210);
+			context.lineTo(260,170);
+			context.lineTo(190,140);
+			context.closePath();
+			context.stroke();
+
+
 		}
 	</script>
 </head>
@@ -44,3 +72,4 @@
 
 </body>
 </html>
+
