@@ -92,14 +92,26 @@
 			// Draw a sem transparent green filled rectangle
 			context.fillRect (450,180,100,50);
 
+			// Get a handle to the image object
+			var image = document.getElementById('spaceship');	
+			
+			// Draw the image at (0,350);
+			context.drawImage(image,0,350);
+
+			// Scaling the image to half the original size
+			context.drawImage(image,0,400,100,25);
+
+			// Drawing part of the image
+			context.drawImage(image,0,0,60,50,0,420,60,50);
+
 		}
 	</script>
 </head>
 <body onload = "pageLoaded()";">
 <canvas width="640" height="480" id="testcanvas" style="border:black 1px solid;">
 	Your browser does not support HTML5 canvas. Please shift to another browser.
+	<img src="img/spaceship.png" id="spaceship">
 </canvas>
-
 </body>
 </html>
 
